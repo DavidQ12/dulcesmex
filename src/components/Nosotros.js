@@ -1,28 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Card, CardContent } from "./UI/card";
 import "./nosotros.css";
 
 export default function Nosotros() {
   const valores = [
-    { 
-      titulo: "Calidad Garantizada", 
-      desc: "Cada dulce es seleccionado cuidadosamente para ofrecerte lo mejor.",
-      icon: "⭐"
-    },
-    { 
-      titulo: "Pasión por lo Tradicional", 
-      desc: "Preservamos recetas auténticas que representan la dulcería mexicana.",
-      icon: "❤️"
-    },
-    { 
-      titulo: "Atención Humana", 
-      desc: "Creemos en el servicio cercano, real y hecho con corazón.",
-      icon: "🤝"
-    },
+    { titulo: "Calidad Garantizada", desc: "Cada dulce es seleccionado cuidadosamente para ofrecerte lo mejor." },
+    { titulo: "Pasión por lo Tradicional", desc: "Preservamos recetas auténticas que representan la dulcería mexicana." },
+    { titulo: "Atención Humana", desc: "Creemos en el servicio cercano, real y hecho con corazón." },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-900 to-black text-white font-sans nosotros-container">
+    <div className="nosotros-container">
       {/* Elementos decorativos flotantes */}
       <div className="floating-elements">
         <div className="floating-element">🍬</div>
@@ -40,132 +29,72 @@ export default function Nosotros() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="nosotros-hero-title"
+          className="nosotros-title"
         >
-          Nuestra Historia
+          Sobre Nosotros
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="nosotros-subtitle"
+        >
+          En <span className="nosotros-highlight">DulcesMex</span>, celebramos el sabor, la cultura y la tradición mexicana.
+          Somos un equipo apasionado por compartir dulces.
+        </motion.p>
       </section>
 
-      {/* HISTORIA */}
-      <section className="nosotros-historia-section">
-        <div className="nosotros-historia-content">
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="historia-image"
-          >
-            <img 
-              src="" 
-              alt="Historia de DulcesMex"
-              className="historia-main-image"
-            />
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="historia-text"
-          >
-            <p className="historia-description">
-              Desde 2020, DulcesMex nació del sueño de compartir la auténtica dulcería mexicana con el mundo. 
-              hoy se ha convertido en una marca 
-              reconocida por su compromiso con la calidad y la tradición.
-            </p>
-            <p className="historia-description">
-              Cada dulce que lleva consigo el corazón de México.
-            </p>
-            <div className="historia-logros">
-              <div className="historia-logro">
-                <span className="logro-icon"></span>
-                <span className="logro-text"></span>
-              </div>
-              <div className="historia-logro">
-                <span className="logro-icon">🌎</span>
-                <span className="logro-text">Envíos a todo el país</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* MISIÓN Y VISIÓN */}
-      <section className="mision-vision-section">
-        <div className="mision-vision-grid">
-          {/* Misión */}
+      {/* MISIÓN - VISIÓN */}
+      <section className="nosotros-mission-vision">
+        <div className="mission-vision-grid">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mision-card"
+            className="mission-card"
           >
-            <div className="card-header">
-              <span className="card-icon">🎯</span>
-              <h2 className="card-title">Nuestra Misión</h2>
-            </div>
-            <p className="card-text">
-              Brindar dulces mexicanos auténticos y de alta calidad, acompañados de una experiencia de compra única 
+            <h2 className="mission-title">Nuestra Misión</h2>
+            <p className="mission-text">
+              Brindar dulces mexicanos auténticos y de alta calidad, acompañados de una experiencia de compra única
               que conecte a nuestros clientes con las raíces mexicanas.
             </p>
-            <img 
-              src="https://i.pinimg.com/236x/75/78/90/757890ad5d6425181aaec8d6e4ab0714.jpg" 
-              alt="Misión DulcesMex"
-              className="card-image"
-            />
           </motion.div>
 
-          {/* Visión */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="vision-card"
           >
-            <div className="card-header">
-              <span className="card-icon">🔭</span>
-              <h2 className="card-title">Nuestra Visión</h2>
-            </div>
-            <p className="card-text">
-              llevando el sabor tradicional mexicano
-              a todo el pais.
+            <h2 className="vision-title">Nuestra Visión</h2>
+            <p className="vision-text">
+              Convertirnos en la tienda digital líder en dulcería mexicana, llevando el sabor tradicional.
             </p>
-            <img 
-              src="" 
-              alt="Visión DulcesMex"
-              className="card-image"
-            />
           </motion.div>
         </div>
       </section>
 
       {/* VALORES */}
-      <section className="valores-section">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="valores-title"
-        >
+      <section className="nosotros-values">
+        <h2 className="values-title">
           Nuestros Valores
-        </motion.h2>
+        </h2>
 
-        <div className="valores-grid">
-          {valores.map((valor, index) => (
+        <div className="values-grid">
+          {valores.map((v, i) => (
             <motion.div
-              key={index}
+              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="valor-card"
+              transition={{ duration: 0.5, delay: i * 0.2 }}
             >
-              <div className="valor-icon-container">
-                <span className="valor-icon">{valor.icon}</span>
-              </div>
-              <div className="valor-content">
-                <h3 className="valor-titulo">{valor.titulo}</h3>
-                <p className="valor-desc">{valor.desc}</p>
-              </div>
+              <Card className="value-card">
+                <CardContent>
+                  <h3 className="value-title">{v.titulo}</h3>
+                  <p className="value-description">{v.desc}</p>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -173,11 +102,7 @@ export default function Nosotros() {
 
       {/* FOOTER */}
       <footer className="nosotros-footer">
-        <div className="footer-content">
-          <p className="footer-text">
-            © {new Date().getFullYear()} DulcesMex — Tradición que endulza el alma.
-          </p>
-        </div>
+        © {new Date().getFullYear()} DulcesMex — Tradición que endulza el alma.
       </footer>
     </div>
   );
