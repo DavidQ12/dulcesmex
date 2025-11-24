@@ -2,7 +2,7 @@
   "name": "dulcesmex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http:/DavidQ12.github.io/dulcesmex",
+  "homepage": "https://davidq12.github.io/dulcesmex",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
