@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dulcesmex/static/css/main.aec11e65.css",
-    "main.js": "/dulcesmex/static/js/main.8940e05a.js",
+    "main.js": "/dulcesmex/static/js/main.b6308857.js",
     "static/js/453.6976fcde.chunk.js": "/dulcesmex/static/js/453.6976fcde.chunk.js",
     "index.html": "/dulcesmex/index.html",
     "main.aec11e65.css.map": "/dulcesmex/static/css/main.aec11e65.css.map",
-    "main.8940e05a.js.map": "/dulcesmex/static/js/main.8940e05a.js.map",
+    "main.b6308857.js.map": "/dulcesmex/static/js/main.b6308857.js.map",
     "453.6976fcde.chunk.js.map": "/dulcesmex/static/js/453.6976fcde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aec11e65.css",
-    "static/js/main.8940e05a.js"
+    "static/js/main.b6308857.js"
   ]
 }
