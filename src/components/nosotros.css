@@ -1,0 +1,446 @@
+/* Nosotros.css - Diseño mejorado para DulcesMex */
+
+.nosotros-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8B0000 0%, #5D4037 50%, #2D1B1B 100%);
+  color: #FFF9F0;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.nosotros-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(194, 24, 91, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Hero Section Styles */
+.max-w-5xl.mx-auto.px-6 {
+  position: relative;
+  z-index: 2;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #FFF9F0, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.text-zinc-300 {
+  color: #FFF9F0;
+  opacity: 0.9;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.text-red-400 {
+  color: #D4AF37 !important;
+  font-weight: 700;
+}
+
+/* Mission & Vision Section */
+.max-w-6xl.mx-auto.px-6 {
+  position: relative;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+}
+
+.md\\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.bg-zinc-900\\/60 {
+  background: linear-gradient(135deg, rgba(93, 64, 55, 0.8), rgba(114, 47, 55, 0.6)) !important;
+  backdrop-filter: blur(20px);
+}
+
+.border-zinc-700 {
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-2xl {
+  border-radius: 1.5rem;
+}
+
+.shadow-xl {
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Mission/Vision Cards Hover Effects */
+.bg-zinc-900\\/60 {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-zinc-900\\/60::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.bg-zinc-900\\/60:hover::before {
+  left: 100%;
+}
+
+.bg-zinc-900\\/60:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Mission/Vision Titles */
+.text-3xl {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.text-red-300 {
+  color: #D4AF37 !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Mission/Vision Text */
+.text-zinc-300 {
+  color: #FFF9F0 !important;
+  opacity: 0.9;
+}
+
+.leading-relaxed {
+  line-height: 1.7;
+}
+
+/* Values Section */
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-black\\/50 {
+  background: linear-gradient(180deg, rgba(45, 27, 27, 0.8) 0%, rgba(93, 64, 55, 0.6) 100%) !important;
+}
+
+.border-t {
+  border-top: 1px solid rgba(212, 175, 55, 0.2) !important;
+}
+
+.border-zinc-800 {
+  border-color: rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Values Title */
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+/* Values Grid */
+.md\\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Value Cards */
+.bg-zinc-900\\/60.border-zinc-700.rounded-2xl {
+  background: linear-gradient(135deg, rgba(93, 64, 55, 0.9), rgba(114, 47, 55, 0.7)) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  border-radius: 1.5rem;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-zinc-900\\/60.border-zinc-700.rounded-2xl::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(45deg, #D4AF37, #FFD700, #C2185B);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bg-zinc-900\\/60.border-zinc-700.rounded-2xl:hover::before {
+  opacity: 1;
+}
+
+.bg-zinc-900\\/60.border-zinc-700.rounded-2xl:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 
+    0 16px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Card Content */
+.p-8 {
+  padding: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.text-red-400 {
+  color: #D4AF37 !important;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.text-zinc-400 {
+  color: #FFF9F0 !important;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Footer */
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-zinc-500 {
+  color: #FFF9F0 !important;
+  opacity: 0.7;
+}
+
+.border-zinc-800 {
+  border-top: 1px solid rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Floating Elements */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-element {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.floating-element:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-element:nth-child(2) {
+  top: 60%;
+  left: 85%;
+  animation-delay: 2s;
+}
+
+.floating-element:nth-child(3) {
+  top: 80%;
+  left: 15%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(10px, -20px) rotate(5deg); 
+  }
+  50% { 
+    transform: translate(-15px, -30px) rotate(-3deg); 
+  }
+  75% { 
+    transform: translate(20px, -15px) rotate(2deg); 
+  }
+}
+
+/* Decorative Corners */
+.decorative-corner {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.corner-top-left {
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle, #D4AF37 0%, transparent 70%);
+}
+
+.corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle, #C2185B 0%, transparent 70%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pt-28 {
+    padding-top: 6rem;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  
+  .text-6xl {
+    font-size: 3rem;
+  }
+  
+  .md\\:grid-cols-2,
+  .md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .gap-10 {
+    gap: 2rem;
+  }
+  
+  .p-8 {
+    padding: 1.5rem;
+  }
+  
+  .pb-24 {
+    padding-bottom: 4rem;
+  }
+  
+  .py-20 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .mb-12 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-5xl {
+    font-size: 2rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-4xl {
+    font-size: 1.75rem;
+  }
+  
+  .px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .bg-zinc-900\\/60,
+  .bg-zinc-900\\/60.border-zinc-700.rounded-2xl,
+  .floating-element {
+    transition: none;
+    animation: none;
+  }
+  
+  .bg-zinc-900\\/60:hover,
+  .bg-zinc-900\\/60.border-zinc-700.rounded-2xl:hover {
+    transform: none;
+  }
+}
+
+/* Focus States for Accessibility */
+.bg-zinc-900\\/60:focus,
+.bg-zinc-900\\/60.border-zinc-700.rounded-2xl:focus {
+  outline: 2px solid #D4AF37;
+  outline-offset: 4px;
+}
